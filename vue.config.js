@@ -4,7 +4,7 @@
  * @Author: herman
  * @Date: 2021-03-30 10:59:23
  * @LastEditors: herman
- * @LastEditTime: 2021-03-30 14:08:16
+ * @LastEditTime: 2021-04-06 15:23:52
  */
 
 const path = require('path')
@@ -34,7 +34,8 @@ module.exports = {
         name: projectName,
         resolve: {
             alias: {
-                '@': resolve('src')
+                '@': resolve('src'),
+                'vue-i18n': 'vue-i18n/dist/vue-i18n.cjs.js'
             }
         },
         plugins: [

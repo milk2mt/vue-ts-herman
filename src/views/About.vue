@@ -20,16 +20,6 @@
     import { getToken, delToken } from '@/utils/auth'
     export default {
         setup() {
-            let token = ref(getToken())
-            let router = useRouter()
-            const onRemove = () => {
-                delToken()
-                token = ref('')
-                router.push({path: '/login'})
-            }
-            return {
-                token, onRemove
-            }
         },
         components: {},
     }

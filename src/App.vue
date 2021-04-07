@@ -4,15 +4,10 @@
  * @Author: herman
  * @Date: 2021-03-30 10:17:20
  * @LastEditors: herman
- * @LastEditTime: 2021-04-01 09:22:07
+ * @LastEditTime: 2021-04-06 16:56:39
  * @FilePath: /vue-js-herman/src/App.vue
 -->
 <template>
-    <div id="nav">
-        <template v-for="(r, i) in routers" :key="i">
-            <router-link :to="r.path">{{r.name}}</router-link> | 
-        </template>        
-    </div>
     <router-view />
 </template>
 

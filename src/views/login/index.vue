@@ -4,14 +4,14 @@
  * @Author: herman
  * @Date: 2021-03-30 12:04:14
  * @LastEditors: herman
- * @LastEditTime: 2021-04-01 09:25:30
+ * @LastEditTime: 2021-04-06 15:55:50
  * @FilePath: /vue-js-herman/src/views/login/index.vue
 -->
 
 <template>
     <div v-loading="loading">
         <div class="loginPanel">
-            <h3>用户登录</h3>
+            <h3 v-text="$t('msg.loginTitle')"></h3>
             <el-form class="loginForm" ref="loginRef" :model="loginForm" :rules="loginRules">
                 <el-form-item prop="username">
                     <el-input size="medium" ref="username" v-model="loginForm.username" placeholder="请输入账号..." tabindex="1">
@@ -31,7 +31,7 @@
                     </el-input>
                 </el-form-item>
                 <el-form-item>
-                    <el-button size="medium" type="primary" @click="onSubmit">登录</el-button>
+                    <el-button size="medium" type="primary" @click="onSubmit" v-text="$t('btn.loginBtn')"></el-button>
                 </el-form-item>
             </el-form>
         </div>
